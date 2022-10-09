@@ -1,0 +1,88 @@
+body {
+  width: 97%;
+  margin: auto;
+}
+#movieName{
+  outline: none;
+}
+/*navbar */
+#navbar {
+    background-color: black;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+    margin: 5px;
+    align-items: center;
+    border-radius: 5px;
+  }
+  #icon span {
+    font-size: xx-large;
+    color: aliceblue;
+    margin: 5px;
+    font-weight: bolder;
+  }
+  
+  #search span {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    padding-right: -20px;
+    border-radius: 10px;
+  }
+  #search input {
+    padding: 10px 10px 10px 12px;
+    border: none;
+  }
+  #search i {
+    padding: 15px 0px;
+    border: none;
+  }
+  #search button {
+    padding: 7px 7px 7px 7px;
+    border-radius: 10px;
+    margin: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 18px;
+  }
+/*end */  
+#content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#parent {
+    border:1px solid black;
+    height: 400px;
+    font-size: 10px;
+    text-align: center;
+}
+#poster{
+    width:100%;
+    height: 100%;
+    transition: .3s;
+}
+#error{
+    width: 50%;
+    margin: auto;
+}
+#error img{
+    width: 100%;
+}
+#extra{
+    display: none;
+    height: 0px;
+}
+#content div:hover >#extra{
+    border: none;
+        display: block;
+        height: 120px;
+}
+#content div:hover #poster {
+  height: 70%;
+}
+
+#content {
+  margin: 30px;
+}
